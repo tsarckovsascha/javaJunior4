@@ -1,14 +1,19 @@
 package lesson15;
 
 import java.util.TreeSet;
+import org.apache.log4j.Logger;
 
 public class Main {
+
+    public static final Logger LOGGER15 = Logger.getLogger(lesson15.Main.class);
+
     public static void main(String[] args) {
-        Tovar tovar = new Tovar("Телефон", 10000);
-        Tovar tovar1 = new Tovar("Микровалновка", 4500);
-        Tovar tovar2 = new Tovar("Теливизор", 20000);
-        Tovar tovar3 = new Tovar("Самокат", 20000);
-        Tovar tovar4 = new Tovar("Ведро", 100);
+
+        Tovar tovar = new Tovar("Телефон", 10000);         LOGGER15.trace("введен новый товар");
+        Tovar tovar1 = new Tovar("Микровалновка", 4500);         LOGGER15.trace("введен новый товар");
+        Tovar tovar2 = new Tovar("Теливизор", 20000);         LOGGER15.trace("введен новый товар");
+        Tovar tovar3 = new Tovar("Самокат", 20000);         LOGGER15.trace("введен новый товар");
+        Tovar tovar4 = new Tovar("Ведро", 100);         LOGGER15.trace("введен новый товар");
 
 
         Otziv otziv = new Otziv(5,"супер телефон");
@@ -38,6 +43,7 @@ public class Main {
         tovars.add(tovar4);
 
         System.out.println(tovars);
+        LOGGER15.trace("добавили товар, выполнена сортировка по возрастанию цены");
         System.out.println("___________цена____________");
 
 
@@ -50,34 +56,35 @@ public class Main {
         TreeSet<Tovar> sortTovarsname = Tovar.sortbyPriceToFrom(tovars);
         System.out.println(sortTovarsname);*/
 
-
+        LOGGER15.trace("добавили товар, выполнена сортировка по убыванию цены");
         System.out.println("_________обртаная цена______________");
 
 
         TreeSet<Tovar> sortTovarsname1 = Tovar.sortByNameFromTo(tovars);
         System.out.println(sortTovarsname1);
-
+        LOGGER15.trace("добавили товар, выполнена сортировка по наименованию ");
         System.out.println("__________имя____________");
 
 
         TreeSet<Tovar> sortTovarsname2 = Tovar.sortByRateFromTo(tovars);
         System.out.println(sortTovarsname2);
-
+        LOGGER15.trace("добавили рейтинг, выполнена сортировка по  рейтингу");
         System.out.println("__________рейтинг_____________");
 
 
         TreeSet<Tovar> sortTovarsname3 = Tovar.sortByOtzivFromTo(tovars);
         System.out.println(sortTovarsname3);
-
+        LOGGER15.trace("добавили отзыв, выполнена сортировка по  отзыву");
         System.out.println("__________отзыв_____________");
 
 
         TreeSet<Tovar> sortTovarsname4 = Tovar.sortByObzorFromTo(tovars);
         System.out.println(sortTovarsname4);
-
+        LOGGER15.trace("добавили обзор, выполнена сортировка по  обзору");
         System.out.println("__________обзор_____________");
 
         System.out.println(" ");
+
 
     }
 }

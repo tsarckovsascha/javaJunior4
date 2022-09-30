@@ -8,8 +8,8 @@ public class Main {
 
 
     public static void main(String[] args) {
-        LOGGER.error("Наше сообщение error");
-        LOGGER.trace("Наше сообщение trace ");
+        LOGGER.trace("Наше сообщение trace");
+        LOGGER.error("Наше сообщение error ");
         LOGGER.debug("Наше сообщение debug ");
         LOGGER.warn("Наше сообщение warn ");
         LOGGER.info("Наше сообщение info ");
