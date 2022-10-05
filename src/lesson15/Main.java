@@ -43,7 +43,7 @@ public class Main {
         tovars.add(tovar4);
 
         System.out.println(tovars);
-        LOGGER15.trace("добавили товар, выполнена сортировка по возрастанию цены");
+        LOGGER15.error("добавили товар, выполнена сортировка по возрастанию цены");
         System.out.println("___________цена____________");
 
 
@@ -56,7 +56,7 @@ public class Main {
         TreeSet<Tovar> sortTovarsname = Tovar.sortbyPriceToFrom(tovars);
         System.out.println(sortTovarsname);*/
 
-        LOGGER15.trace("добавили товар, выполнена сортировка по убыванию цены");
+        LOGGER15.error("добавили товар, выполнена сортировка по убыванию цены");
         System.out.println("_________обртаная цена______________");
 
 
@@ -68,19 +68,19 @@ public class Main {
 
         TreeSet<Tovar> sortTovarsname2 = Tovar.sortByRateFromTo(tovars);
         System.out.println(sortTovarsname2);
-        LOGGER15.trace("добавили рейтинг, выполнена сортировка по  рейтингу");
+        LOGGER15.error("добавили рейтинг, выполнена сортировка по  рейтингу");
         System.out.println("__________рейтинг_____________");
 
 
         TreeSet<Tovar> sortTovarsname3 = Tovar.sortByOtzivFromTo(tovars);
         System.out.println(sortTovarsname3);
-        LOGGER15.trace("добавили отзыв, выполнена сортировка по  отзыву");
+        LOGGER15.error("добавили отзыв, выполнена сортировка по  отзыву");
         System.out.println("__________отзыв_____________");
 
 
         TreeSet<Tovar> sortTovarsname4 = Tovar.sortByObzorFromTo(tovars);
         System.out.println(sortTovarsname4);
-        LOGGER15.trace("добавили обзор, выполнена сортировка по  обзору");
+        LOGGER15.error("добавили обзор, выполнена сортировка по  обзору");
         System.out.println("__________обзор_____________");
 
         System.out.println(" ");
